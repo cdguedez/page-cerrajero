@@ -19,3 +19,21 @@ document.addEventListener("DOMContentLoaded", () => {
   const animatedElements = document.querySelectorAll(".animate-up");
   animatedElements.forEach((el) => observer.observe(el));
 });
+
+// Definición del Web Component
+class ServiceCard extends HTMLElement {
+  connectedCallback() {
+    this.classList.add("service-card");
+    const icon = this.getAttribute("icon");
+    const title = this.getAttribute("title");
+    const description = this.getAttribute("description");
+
+    this.innerHTML = `
+        <div class="service-icon">${icon}</div>
+        <h4>${title}</h4>
+        <p>${description}</p>
+    `;
+  }
+}
+
+customElements.define("service-card", ServiceCard);
