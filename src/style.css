@@ -74,6 +74,16 @@ ul {
   border-radius: 2px;
 }
 
+.section-divider {
+  width: 80%;
+  max-width: 1000px;
+  height: 2px;
+  background: linear-gradient(to right, transparent, var(--accent-color), transparent);
+  margin: 0 auto;
+  border-radius: 2px;
+  opacity: 0.6;
+}
+
 /* Buttons */
 .btn {
   display: inline-flex;
@@ -313,9 +323,9 @@ ul {
   color: var(--white);
 }
 
-.social-btn.facebook:hover {
-  background-color: #1877F2;
-  border-color: #1877F2;
+.social-btn.email:hover {
+  background-color: #EA4335;
+  border-color: #EA4335;
 }
 
 .social-btn.instagram:hover {
