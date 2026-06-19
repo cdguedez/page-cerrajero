@@ -241,7 +241,7 @@ ul {
   margin: 40px 12px 0px 12px;
 }
 
-.service-card {
+.service-card, .warranty-card {
   background-color: var(--bg-card);
   padding: 40px 30px;
   border-radius: 12px;
@@ -250,24 +250,24 @@ ul {
   border: 1px solid rgba(0, 0, 0, 0.05);
 }
 
-.service-card:hover {
+.service-card:hover, .warranty-card:hover {
   transform: translateY(-10px);
   border-color: var(--accent-color);
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
 }
 
-.service-icon {
+.card-icon {
   font-size: 3rem;
   margin-bottom: 20px;
 }
 
-.service-card h4 {
+.service-card h4, .warranty-card h4 {
   font-size: 1.5rem;
   margin-bottom: 15px;
   color: var(--primary-color);
 }
 
-.service-card p {
+.service-card p, .warranty-card p {
   color: var(--text-light);
   line-height: 1.6;
 }
