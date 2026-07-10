@@ -41,7 +41,7 @@ class ServiceCard extends HTMLElement {
 
     this.addEventListener("click", () => {
       const encodedMessage = encodeURIComponent(message);
-      const whatsappUrl = `https://wa.me/584242609790?text=${encodedMessage}`;
+      const whatsappUrl = `https://wa.me/584121812220?text=${encodedMessage}`;
       window.open(whatsappUrl, "_blank", "noopener,noreferrer");
     });
   }

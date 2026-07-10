@@ -150,8 +150,10 @@ ul {
   gap: 10px;
 }
 
-.logo-icon {
-  font-size: 2rem;
+.header-logo-img {
+  margin-top: -24px;
+  margin-bottom: -24px;
+  object-fit: contain;
 }
 
 .logo h1 {
