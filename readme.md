@@ -41,3 +41,8 @@ Asegúrate de tener instalado [Node.js](https://nodejs.org/) en tu sistema.
 - `npm run dev`: Inicia el servidor de desarrollo local de Vite.
 - `npm run build`: Construye la versión optimizada para producción.
 - `npm run preview`: Previsualiza la versión construida localmente.
+
+### Publicación en GitHub Pages
+
+dominio: https://cerajeriasos24.com/
+repositorio: https://github.com/cdguedez/page-cerrajero
