@@ -44,5 +44,5 @@ Asegúrate de tener instalado [Node.js](https://nodejs.org/) en tu sistema.
 
 ### Publicación en GitHub Pages
 
-dominio: https://cerajeriasos24.com/
+dominio: https://cerrajeriasos24.com/
 repositorio: https://github.com/cdguedez/page-cerrajero
