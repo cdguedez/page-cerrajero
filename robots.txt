@@ -1,4 +1,0 @@
-User-agent: *
-Allow: /
-
-Sitemap: https://cerrajeriasos24.com/sitemap.xml
