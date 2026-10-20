@@ -1,0 +1,51 @@
+---
+import { getCollection, render } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+
+export async function getStaticPaths() {
+  const posts = await getCollection('blog', ({ data }) => !data.draft);
+  return posts.map((post) => ({ params: { slug: post.id }, props: { post } }));
+}
+
+const { post } = Astro.props;
+const { Content } = await render(post);
+const SITE = 'https://cerrajeriasos24.com';
+const fmt = new Intl.DateTimeFormat('es-VE', { dateStyle: 'long' });
+const image = post.data.image ?? '/assets/banner.png';
+
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'BlogPosting',
+  headline: post.data.title,
+  description: post.data.description,
+  datePublished: post.data.date.toISOString(),
+  image: new URL(image, SITE).href,
+  mainEntityOfPage: `${SITE}/blog/${post.id}/`,
+  author: { '@type': 'Organization', name: 'Cerrajería S.O.S 24' },
+  publisher: { '@type': 'Organization', name: 'Cerrajería S.O.S 24' },
+};
+---
+<BaseLayout
+  title={`${post.data.title} | Cerrajería S.O.S 24`}
+  description={post.data.description}
+  ogType="article"
+  image={image}
+>
+  <script slot="head" type="application/ld+json" is:inline set:html={JSON.stringify(jsonLd)} />
+  <main class="blog container section">
+    <article class="post">
+      <a class="post-back" href="/blog/">← Volver al blog</a>
+      <h1>{post.data.title}</h1>
+      <time datetime={post.data.date.toISOString()}>{fmt.format(post.data.date)}</time>
+      <div class="post-content">
+        <Content />
+      </div>
+      <aside class="post-cta">
+        <h2>¿Necesitas un cerrajero ahora?</h2>
+        <p>Atendemos emergencias 24/7 en Caracas. Llegamos en 15 a 30 minutos.</p>
+        <a href="https://wa.me/584121812220?text=Hola,%20necesito%20ayuda%20de%20un%20cerrajero"
+          class="btn btn-whatsapp" target="_blank" rel="noopener noreferrer">Escríbenos por WhatsApp</a>
+      </aside>
+    </article>
+  </main>
+</BaseLayout>

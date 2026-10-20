@@ -13,7 +13,7 @@ Página web (Landing Page) para **Cerrajería Express Caracas**, un servicio de 
 - HTML5 (Semántico)
 - CSS3 (Vanilla, Custom properties, animaciones)
 - JavaScript (Módulos ES6)
-- [Vite](https://vitejs.dev/) como herramienta de construcción (Build Tool).
+- [Astro](https://astro.build/) para generar contenido estático (SSG), desplegado en Vercel.
 
 ## Requisitos Previos
 
@@ -34,15 +34,15 @@ Asegúrate de tener instalado [Node.js](https://nodejs.org/) en tu sistema.
    ```bash
    npm run dev
    ```
-5. Abre la URL local (por defecto `http://localhost:5173`) en tu navegador para ver la página.
+5. Abre la URL local (por defecto `http://localhost:4321`) en tu navegador para ver la página.
 
 ## Scripts Disponibles
 
-- `npm run dev`: Inicia el servidor de desarrollo local de Vite.
+- `npm run dev`: Inicia el servidor de desarrollo local de Astro.
 - `npm run build`: Construye la versión optimizada para producción.
 - `npm run preview`: Previsualiza la versión construida localmente.
 
-### Publicación en GitHub Pages
+### Despliegue en Vercel (salida estática en `dist/`)
 
 dominio: https://cerrajeriasos24.com/
 repositorio: https://github.com/cdguedez/page-cerrajero
