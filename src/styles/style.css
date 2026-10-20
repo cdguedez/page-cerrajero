@@ -9,6 +9,9 @@
   /* Darker Red */
   --whatsapp-color: #25D366;
   --whatsapp-hover: #128C7E;
+  /* Variantes con contraste AA (>= 4.5:1) para botones con texto blanco */
+  --whatsapp-btn: #0A7C42;
+  --whatsapp-btn-hover: #075E33;
   --bg-main: rgba(234, 236, 238, 0.90);
   /* Translucent main background */
   --bg-card: rgba(255, 255, 255, 0.93);
@@ -129,12 +132,12 @@ ul {
 }
 
 .btn-whatsapp {
-  background-color: var(--whatsapp-color);
+  background-color: var(--whatsapp-btn);
   color: var(--white);
 }
 
 .btn-whatsapp:hover {
-  background-color: var(--whatsapp-hover);
+  background-color: var(--whatsapp-btn-hover);
   transform: translateY(-2px);
   box-shadow: 0 5px 15px rgba(37, 211, 102, 0.4);
 }
@@ -290,7 +293,7 @@ a.service-card {
   margin-top: 20px;
   padding: 10px 22px;
   border-radius: 50px;
-  background-color: var(--whatsapp-color);
+  background-color: var(--whatsapp-btn);
   color: #fff;
   font-weight: 600;
   font-size: 0.95rem;
@@ -299,7 +302,7 @@ a.service-card {
 }
 
 .service-card:hover .card-cta {
-  background-color: var(--whatsapp-hover);
+  background-color: var(--whatsapp-btn-hover);
 }
 
 .service-card h3,
