@@ -1,0 +1,522 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+---
+
+<BaseLayout
+    title="Cerrajero en Caracas 24 Horas | Emergencias a Domicilio"
+    description="Cerrajero 24 horas en Caracas: apertura de puertas y autos sin daños, cambio de cerraduras y copia de llaves. Llegamos en 15 a 30 min. Llama al 0412-1812220."
+    canonical="https://cerrajeriasos24.com/"
+    image="/og-image.jpg"
+>
+    <script slot="head" type="application/ld+json" is:inline>
+        {
+            "@context": "https://schema.org",
+            "@type": "Locksmith",
+            "@id": "https://cerrajeriasos24.com/#negocio",
+            "name": "Cerrajería S.O.S 24",
+            "description": "Servicio de cerrajería a domicilio las 24 horas en Caracas: apertura de puertas y vehículos, cambio y reparación de cerraduras, copias de llaves y controles remotos.",
+            "image": "https://cerrajeriasos24.com/assets/banner.png",
+            "telephone": "+584121812220",
+            "email": "cerrajeriasos24h@gmail.com",
+            "url": "https://cerrajeriasos24.com/",
+            "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "Área Metropolitana",
+                "addressLocality": "Caracas",
+                "addressRegion": "Distrito Capital",
+                "postalCode": "1080",
+                "addressCountry": "VE"
+            },
+            "geo": {
+                "@type": "GeoCoordinates",
+                "latitude": 10.47803961485294,
+                "longitude": -66.85822011800957
+            },
+            "areaServed": [
+                { "@type": "City", "name": "Caracas" },
+                { "@type": "AdministrativeArea", "name": "Chacao" },
+                { "@type": "AdministrativeArea", "name": "Altamira" },
+                { "@type": "AdministrativeArea", "name": "Las Mercedes" },
+                { "@type": "AdministrativeArea", "name": "La Lagunita" },
+                { "@type": "AdministrativeArea", "name": "La Boyera" },
+                { "@type": "AdministrativeArea", "name": "Los Naranjos" },
+                { "@type": "AdministrativeArea", "name": "El Rosal" },
+                { "@type": "AdministrativeArea", "name": "Baruta" },
+                { "@type": "AdministrativeArea", "name": "Sucre" },
+                { "@type": "AdministrativeArea", "name": "El Hatillo" },
+                { "@type": "AdministrativeArea", "name": "Libertador" }
+            ],
+            "openingHoursSpecification": {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": [
+                    "Monday",
+                    "Tuesday",
+                    "Wednesday",
+                    "Thursday",
+                    "Friday",
+                    "Saturday",
+                    "Sunday"
+                ],
+                "opens": "00:00",
+                "closes": "23:59"
+            },
+            "priceRange": "$$",
+            "sameAs": [
+                "https://www.instagram.com/cerrajeria_s.o.s_24",
+                "https://tiktok.com/@cerrajeria_sos_24"
+            ],
+            "hasOfferCatalog": {
+                "@type": "OfferCatalog",
+                "name": "Servicios de cerrajería",
+                "itemListElement": [
+                    {
+                        "@type": "Offer",
+                        "itemOffered": {
+                            "@type": "Service",
+                            "name": "Cerrajero de emergencia 24 horas"
+                        }
+                    },
+                    {
+                        "@type": "Offer",
+                        "itemOffered": {
+                            "@type": "Service",
+                            "name": "Apertura de puertas de casa, apartamento y oficina"
+                        }
+                    },
+                    {
+                        "@type": "Offer",
+                        "itemOffered": {
+                            "@type": "Service",
+                            "name": "Desbloqueo de vehículos"
+                        }
+                    },
+                    {
+                        "@type": "Offer",
+                        "itemOffered": {
+                            "@type": "Service",
+                            "name": "Instalación y reparación de cerraduras"
+                        }
+                    },
+                    {
+                        "@type": "Offer",
+                        "itemOffered": {
+                            "@type": "Service",
+                            "name": "Copia de llaves y programación de controles remotos"
+                        }
+                    }
+                ]
+            }
+        }
+    </script>
+    <script slot="head" type="application/ld+json" is:inline>
+        {
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+                {
+                    "@type": "Question",
+                    "name": "¿Cuánto tardan en llegar los cerrajeros en Caracas?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Llegamos en un promedio de 15 a 30 minutos, según la zona de Caracas y el tráfico. Atendemos emergencias las 24 horas, todos los días."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "¿Atienden emergencias de madrugada y fines de semana?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Sí. Nuestro servicio de cerrajería funciona 24 horas, los 7 días de la semana, incluyendo feriados."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "¿Pueden abrir mi carro sin dañarlo?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Sí. Usamos técnicas de apertura sin daños en la carrocería ni en la cerradura del vehículo."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "¿Qué garantía tienen los trabajos?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Nuestros servicios técnicos, incluyendo mano de obra y productos, tienen 1 año de garantía."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "¿Cómo puedo solicitar un cerrajero?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Puedes llamar al +58 412-1812220 o escribirnos por WhatsApp. Te indicamos el tiempo de llegada y el costo antes de iniciar el trabajo."
+                    }
+                }
+            ]
+        }
+    </script>
+    <main>
+        <section class="hero">
+            <div class="hero-content container">
+                <h1 class="animate-up">
+                    Servicio de Cerrajería a Domicilio en Caracas
+                </h1>
+                <p class="animate-up delay-1">
+                    Llegamos en 15 a 30 minutos a cualquier parte de Caracas.
+                    Especialistas en emergencias 24/7.
+                </p>
+                <div class="hero-actions animate-up delay-2">
+                    <a
+                        href="https://wa.me/584121812220?text=Hola,%20necesito%20ayuda%20de%20un%20cerrajero"
+                        class="btn btn-large btn-whatsapp"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        <svg
+                            class="icon"
+                            viewBox="0 0 24 24"
+                            width="24"
+                            height="24"
+                            stroke="currentColor"
+                            stroke-width="2"
+                            fill="none"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                        >
+                            <path
+                                d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"
+                            >
+                            </path>
+                        </svg>
+                        Escríbenos por WhatsApp
+                    </a>
+                </div>
+            </div>
+            <div class="hero-overlay"></div>
+        </section>
+        <section id="servicios" class="services section container">
+            <h2 class="section-title">Nuestros Servicios</h2>
+            <div class="services-grid">
+                <a
+                    class="service-card"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    href="https://wa.me/584121812220?text=Hola%2C%20necesito%20informaci%C3%B3n%20sobre%20el%20servicio%20de%3A%20Servicios%20de%20Emergencia"
+                >
+                    <div class="card-icon" aria-hidden="true">🚨</div>
+                    <h3>Servicios de Emergencia</h3>
+                    <p>
+                        Atención 24/7 para cierres, desbloqueo de puertas y
+                        reparaciones urgentes.
+                    </p>
+                    <span class="card-cta"
+                        >Pedir cerrajero de emergencia por WhatsApp</span
+                    >
+                </a>
+                <a
+                    class="service-card"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    href="https://wa.me/584121812220?text=Hola%2C%20necesito%20informaci%C3%B3n%20sobre%20el%20servicio%20de%3A%20Instalaci%C3%B3n%20de%20Cerraduras"
+                >
+                    <div class="card-icon" aria-hidden="true">🔐</div>
+                    <h3>Instalación de Cerraduras</h3>
+                    <p>
+                        Información e instalación de diferentes tipos de
+                        cerraduras (digitales, biométricas, de alta seguridad).
+                    </p>
+                    <span class="card-cta"
+                        >Solicitar instalación de cerraduras por WhatsApp</span
+                    >
+                </a>
+                <a
+                    class="service-card"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    href="https://wa.me/584121812220?text=Hola%2C%20necesito%20informaci%C3%B3n%20sobre%20el%20servicio%20de%3A%20Reparaci%C3%B3n%20de%20Cerraduras"
+                >
+                    <div class="card-icon" aria-hidden="true">🛠️</div>
+                    <h3>Reparación de Cerraduras</h3>
+                    <p>
+                        Servicios para reparar cerraduras dañadas, reemplazar
+                        llaves y optimizar la seguridad.
+                    </p>
+                    <span class="card-cta"
+                        >Solicitar reparación de cerraduras por WhatsApp</span
+                    >
+                </a>
+                <a
+                    class="service-card"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    href="https://wa.me/584121812220?text=Hola%2C%20necesito%20informaci%C3%B3n%20sobre%20el%20servicio%20de%3A%20Comercializaci%C3%B3n%20de%20Productos"
+                >
+                    <div class="card-icon" aria-hidden="true">🛒</div>
+                    <h3>Comercialización de Productos</h3>
+                    <p>
+                        Venta de cerraduras, seguros y otros sistemas de
+                        seguridad. Visita nuestra tienda en línea para facilitar
+                        tu compra.
+                    </p>
+                    <span class="card-cta"
+                        >Consultar precios de cerraduras por WhatsApp</span
+                    >
+                </a>
+                <a
+                    class="service-card"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    href="https://wa.me/584121812220?text=Hola%2C%20necesito%20informaci%C3%B3n%20sobre%20el%20servicio%20de%3A%20Consultor%C3%ADa%20de%20Seguridad"
+                >
+                    <div class="card-icon" aria-hidden="true">🛡️</div>
+                    <h3>Consultoría de Seguridad</h3>
+                    <p>
+                        Asesoramiento sobre cómo mejorar la seguridad del hogar
+                        o negocio, incluyendo análisis de vulnerabilidades.
+                    </p>
+                    <span class="card-cta"
+                        >Solicitar asesoría de seguridad por WhatsApp</span
+                    >
+                </a>
+                <a
+                    class="service-card"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    href="https://wa.me/584121812220?text=Hola%2C%20necesito%20informaci%C3%B3n%20sobre%20el%20servicio%20de%3A%20Servicios%20de%20Llave%20y%20Control%20Remoto"
+                >
+                    <div class="card-icon" aria-hidden="true">🔑</div>
+                    <h3>Servicios de Llave y Control Remoto</h3>
+                    <p>
+                        Realización de copias de llaves, llaves de auto y
+                        programación de controles remotos.
+                    </p>
+                    <span class="card-cta"
+                        >Pedir copia de llaves o control por WhatsApp</span
+                    >
+                </a>
+                <a
+                    class="service-card"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    href="https://wa.me/584121812220?text=Hola%2C%20necesito%20informaci%C3%B3n%20sobre%20el%20servicio%20de%3A%20Desbloqueo%20de%20Veh%C3%ADculos"
+                >
+                    <div class="card-icon" aria-hidden="true">🚘</div>
+                    <h3>Desbloqueo de Vehículos</h3>
+                    <p>
+                        Servicio especializado para desbloquear autos sin causar
+                        daños.
+                    </p>
+                    <span class="card-cta"
+                        >Solicitar desbloqueo de vehículo por WhatsApp</span
+                    >
+                </a>
+            </div>
+        </section>
+        <div class="section-divider"></div>
+        <section id="garantias" class="services section container">
+            <h2 class="section-title">Nuestras Garantías</h2>
+            <div class="services-grid">
+                <article class="warranty-card">
+                    <div class="card-icon" aria-hidden="true">🚗</div>
+                    <h3>Desbloqueo de Automóvil</h3>
+                    <p>
+                        Apertura garantizada y en pocos minutos con (0) daños en
+                        su carrocería.
+                    </p>
+                </article>
+                <article class="warranty-card">
+                    <div class="card-icon" aria-hidden="true">🗝️</div>
+                    <h3>
+                        Fabricación de llaves, reparaciones o mantenimientos
+                    </h3>
+                    <p>
+                        Todo tipo de servicio técnico por medio de nuestros
+                        profesionales tienen (1) año de garantía.
+                    </p>
+                </article>
+                <article class="warranty-card">
+                    <div class="card-icon" aria-hidden="true">🏍️</div>
+                    <h3>Servicio a Domicilio</h3>
+                    <p>
+                        Nuestros servicios incluyen (1) año de garantía (mano de
+                        obra y productos). Tiempo de llegada de 10 a 15 minutos
+                        atendiendo lo más rápido posible su emergencia.
+                    </p>
+                </article>
+                <article class="warranty-card">
+                    <div class="card-icon" aria-hidden="true">🚪</div>
+                    <h3>Desbloqueo de puertas (Casa, Apartamento u Oficina)</h3>
+                    <p>
+                        Las mejores técnicas con el mejor servicio y en poco
+                        tiempo (nos especializamos en no dañar ningún tipo de
+                        cerradura para que el cliente pueda tener la mejor
+                        experiencia con nuestros técnicos).
+                    </p>
+                </article>
+            </div>
+        </section>
+        <section id="zonas" class="services section container">
+            <h2 class="section-title">Cerrajero a Domicilio en Toda Caracas</h2>
+            <p class="zones-intro">
+                Somos cerrajeros en Caracas con atención 24 horas. Nuestros
+                técnicos se desplazan a tu casa, apartamento, oficina o vehículo
+                en las principales urbanizaciones y municipios del Área
+                Metropolitana, con un tiempo de llegada de 15 a 30 minutos según
+                la zona.
+            </p>
+            <ul class="zones-list">
+                <li>Chacao</li>
+                <li>Altamira</li>
+                <li>Los Palos Grandes</li>
+                <li>La Castellana</li>
+                <li>Las Mercedes</li>
+                <li>El Rosal</li>
+                <li>Sabana Grande</li>
+                <li>El Paraíso</li>
+                <li>La Candelaria</li>
+                <li>San Bernardino</li>
+                <li>Los Chaguaramos</li>
+                <li>Petare</li>
+                <li>Baruta</li>
+                <li>El Hatillo</li>
+                <li>Catia</li>
+                <li>Centro de Caracas</li>
+            </ul>
+        </section>
+        <section id="preguntas" class="services section container">
+            <h2 class="section-title">Preguntas Frecuentes</h2>
+            <div class="faq-list">
+                <details class="faq-item">
+                    <summary
+                        >¿Cuánto tardan en llegar los cerrajeros en Caracas?</summary
+                    >
+                    <p>
+                        Llegamos en un promedio de 15 a 30 minutos, según la
+                        zona de Caracas y el tráfico. Atendemos emergencias las
+                        24 horas, todos los días.
+                    </p>
+                </details>
+                <details class="faq-item">
+                    <summary
+                        >¿Atienden emergencias de madrugada y fines de semana?</summary
+                    >
+                    <p>
+                        Sí. Nuestro servicio de cerrajería funciona 24 horas,
+                        los 7 días de la semana, incluyendo feriados.
+                    </p>
+                </details>
+                <details class="faq-item">
+                    <summary>¿Pueden abrir mi carro sin dañarlo?</summary>
+                    <p>
+                        Sí. Usamos técnicas de apertura sin daños en la
+                        carrocería ni en la cerradura del vehículo.
+                    </p>
+                </details>
+                <details class="faq-item">
+                    <summary>¿Qué garantía tienen los trabajos?</summary>
+                    <p>
+                        Nuestros servicios técnicos, incluyendo mano de obra y
+                        productos, tienen 1 año de garantía.
+                    </p>
+                </details>
+                <details class="faq-item">
+                    <summary>¿Cómo puedo solicitar un cerrajero?</summary>
+                    <p>
+                        Puedes llamar al +58 412-1812220 o escribirnos por
+                        WhatsApp. Te indicamos el tiempo de llegada y el costo
+                        antes de iniciar el trabajo.
+                    </p>
+                </details>
+            </div>
+        </section>
+        <section id="contacto" class="contact section">
+            <div class="container">
+                <div class="contact-box">
+                    <h2>¿Tienes una emergencia?</h2>
+                    <p>
+                        Estamos disponibles las 24 horas del día. Llámanos o
+                        escríbenos por WhatsApp para atención inmediata en
+                        Caracas.
+                    </p>
+                    <div class="social-links">
+                        <a
+                            href="mailto:cerrajeriasos24h@gmail.com"
+                            class="social-btn email"
+                            aria-label="Email"
+                        >
+                            <svg
+                                viewBox="0 0 24 24"
+                                width="24"
+                                height="24"
+                                stroke="currentColor"
+                                stroke-width="2"
+                                fill="none"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                            >
+                                <path
+                                    d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"
+                                >
+                                </path>
+                                <polyline points="22,6 12,13 2,6"></polyline>
+                            </svg>
+                        </a>
+                        <a
+                            href="https://www.instagram.com/cerrajeria_s.o.s_24"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="social-btn instagram"
+                            aria-label="Instagram"
+                        >
+                            <svg
+                                viewBox="0 0 24 24"
+                                width="24"
+                                height="24"
+                                stroke="currentColor"
+                                stroke-width="2"
+                                fill="none"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                            >
+                                <rect
+                                    x="2"
+                                    y="2"
+                                    width="20"
+                                    height="20"
+                                    rx="5"
+                                    ry="5"></rect>
+                                <path
+                                    d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"
+                                ></path>
+                                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"
+                                ></line>
+                            </svg>
+                        </a>
+                        <a
+                            href="https://tiktok.com/@cerrajeria_sos_24?_r=1&_t=ZS-97IclR3OttA"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="social-btn tiktok"
+                            aria-label="TikTok"
+                        >
+                            <svg
+                                viewBox="0 0 24 24"
+                                width="24"
+                                height="24"
+                                stroke="currentColor"
+                                stroke-width="2"
+                                fill="none"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                            >
+                                <path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5"
+                                ></path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</BaseLayout>

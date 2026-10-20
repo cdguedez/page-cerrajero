@@ -1,0 +1,97 @@
+---
+import '../styles/style.css';
+
+interface Props {
+  title: string;
+  description: string;
+  canonical?: string;
+  ogType?: 'website' | 'article';
+  image?: string;
+}
+
+const SITE = 'https://cerrajeriasos24.com';
+const {
+  title,
+  description,
+  canonical = new URL(Astro.url.pathname, SITE).href,
+  ogType = 'website',
+  image = '/og-image.jpg',
+} = Astro.props;
+const imageUrl = new URL(image, SITE).href;
+---
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{title}</title>
+    <meta name="description" content={description}>
+    <meta name="author" content="Cerrajería S.O.S 24">
+    <meta name="robots" content="index, follow, max-image-preview:large">
+    <meta name="theme-color" content="#0A2342">
+    <link rel="canonical" href={canonical}>
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+
+    <!-- Open Graph for Facebook/WhatsApp -->
+    <meta property="og:title" content={title}>
+    <meta property="og:description" content={description}>
+    <meta property="og:type" content={ogType}>
+    <meta property="og:locale" content="es_VE">
+    <meta property="og:site_name" content="Cerrajería S.O.S 24">
+    <meta property="og:url" content={canonical}>
+    <meta property="og:image" content={imageUrl}>
+    <meta name="twitter:card" content="summary_large_image">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Outfit:wght@500;700&display=swap"
+        rel="stylesheet">
+
+    <slot name="head" />
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <img src="/assets/banner.png" alt="Cerrajería S.O.S 24 - Cerrajero 24 horas en Caracas"
+                    class="header-logo-img">
+            </div>
+            <nav class="nav">
+                <ul>
+                    <li><a href="/#servicios">Servicios</a></li>
+                    <li><a href="/#zonas">Zonas</a></li>
+                    <li><a href="/#preguntas">Preguntas</a></li>
+                    <li><a href="/blog/">Blog</a></li>
+                    <li><a href="/#contacto">Contacto</a></li>
+                </ul>
+                <a href="tel:+584121812220" class="btn btn-primary">Llamar
+                    Ahora</a>
+            </nav>
+        </div>
+    </header>
+    <slot />
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Cerrajería S.O.S 24. Todos los derechos reservados. | desarrollado por <a
+                    href="https://wa.me/584241220142?text=Hola,%20quiero%20realizar%20mi%20pagina%20web%20contigo"
+                    target="_blank" rel="noopener noreferrer" style="color: #0A2342; font-weight: 600;">Carlos
+                    Guedez</a></p>
+        </div>
+    </footer>
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/584121812220?text=Hola,%20necesito%20ayuda%20de%20un%20cerrajero" class="floating-whatsapp"
+        target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp">
+        <svg viewBox="0 0 24 24" width="30" height="30" stroke="currentColor" stroke-width="2" fill="none"
+            stroke-linecap="round" stroke-linejoin="round">
+            <path
+                d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z">
+            </path>
+        </svg>
+    </a>
+    <script src="../scripts/main.js"></script>
+</body>
+
+</html>

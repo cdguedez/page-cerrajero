@@ -1,0 +1,31 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+
+const posts = (await getCollection('blog', ({ data }) => !data.draft)).sort(
+  (a, b) => b.data.date.valueOf() - a.data.date.valueOf(),
+);
+const fmt = new Intl.DateTimeFormat('es-VE', { dateStyle: 'long' });
+---
+<BaseLayout
+  title="Blog de Cerrajería | Tips y Consejos de Seguridad | Cerrajería S.O.S 24"
+  description="Consejos prácticos de cerrajería en Caracas: mantenimiento de cerraduras, seguridad del hogar y qué hacer en emergencias."
+>
+  <main class="blog container section">
+    <h1 class="section-title">Blog de Cerrajería</h1>
+    <p class="blog-intro">Tips, guías y consejos para cuidar la seguridad de tu hogar, tu oficina y tu vehículo.</p>
+    <div class="blog-grid">
+      {posts.map((post) => (
+        <a class="blog-card" href={`/blog/${post.id}/`}>
+          {post.data.image && <img src={post.data.image} alt={post.data.title} loading="lazy" />}
+          <div class="blog-card-body">
+            <time datetime={post.data.date.toISOString()}>{fmt.format(post.data.date)}</time>
+            <h2>{post.data.title}</h2>
+            <p>{post.data.description}</p>
+            <span class="card-cta">Leer artículo →</span>
+          </div>
+        </a>
+      ))}
+    </div>
+  </main>
+</BaseLayout>
